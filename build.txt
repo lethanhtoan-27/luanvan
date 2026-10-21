@@ -1,0 +1,15 @@
+- Tại đường dẫn dự án:
+cmake -S . -B build-release `
+  -G "Visual Studio 17 2022" `
+  -A x64 `
+  -DCMAKE_PREFIX_PATH="C:/Qt/6.11.2/msvc2022_64" `
+  -DOpenCV_DIR="C:/SDK/opencv-4.14.0/opencv/build/x64/vc16/lib" `
+  -Dncnn_DIR="C:/SDK/ncnn/install/lib/cmake/ncnn" `
+  -DBUILD_DESKTOP=ON `
+  -DBUILD_TESTS=ON `
+  -DDETECTCORE_AUTO_DEPLOY_WINDOWS=ON
+cmake --build build-release --config Release --parallel
+Kiểm tra tệp thực thi:
+Test-Path ".\build-release\Release\detectcore_desktop.exe"
+Thực thi chương trình:
+.\build-release\Release\detectcore_desktop.exe
