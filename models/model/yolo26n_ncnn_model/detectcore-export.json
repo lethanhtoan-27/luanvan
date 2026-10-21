@@ -1,0 +1,13 @@
+{
+  "source_weights": "C:\\Users\\trann\\Documents\\WORK\\ObjectDetectCore_MVP\\models\\yolo26n.pt",
+  "format": "ncnn",
+  "imgsz": 640,
+  "batch": 1,
+  "device": "cpu",
+  "nms": null,
+  "ultralytics": "8.4.155",
+  "ncnn": "1.0.20260526",
+  "pnnx": "20260526",
+  "python": "3.14.4",
+  "platform": "Windows-11-10.0.26200-SP0"
+}
